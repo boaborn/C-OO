@@ -12,13 +12,13 @@ class VecT{
 	public:
 		VecT(int dsize);              //default constructor
 		VecT(const VecT &);           //copy constructor
-      VecT(VecT && rhs);            //move constructor
-   	~VecT();                      //destructor
+                VecT(VecT && rhs);            //move constructor
+   	        ~VecT();                      //destructor
 		int getSize()const;           //accessor for size
 		void setValue(int& i, ET&value);//set a value to array
 		ET getValue(int & i);          
 		VecT<ET>& operator=(const VecT<ET>&right);//copy assignment
-	   VecT<ET>& operator=(VecT &&);    //move assignment
+	        VecT<ET>& operator=(VecT &&);    //move assignment
 		bool operator==(const VecT & right);
 		bool operator!=(const VecT & right);
 		ET &operator[](int);
