@@ -9,11 +9,11 @@ class VecT{
 	public:
 		VecT(int dsize);              //default constructor
 		VecT(const VecT &);       //copy constructor
-      VecT(VecT&&rhs);
-   	~VecT();                     //destructor
+                VecT(VecT&&rhs);
+   	        ~VecT();                     //destructor
 		int getSize()const;          //accessor for size
 		VecT &operator=(const VecT&);//copy assignment
-	   VecT &operator=(VecT &&);    //move assignment
+	        VecT &operator=(VecT &&);    //move assignment
 		bool operator==(const VecT & right);
 		bool operator!=(const VecT & right);
 		ET &operator[](int);
