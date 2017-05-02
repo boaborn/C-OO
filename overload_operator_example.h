@@ -25,8 +25,7 @@ public:
 
    // assignment operator
    const VecType &operator=( const VecType & ); 
-
-
+	
   // equality operator
    bool operator==( const VecType & ) const; 
 
